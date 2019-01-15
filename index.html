@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="#">
+</head>
+
+<body>
+    <script>
+
+    //task1
+       var a = 1, b = 1, c, d;
+        c = ++a; alert(c); // 2,(c=1+1) в префиксной форме инкрементирование производится сразу, а возврат происходит уже с обновлённым значением
+        d = b++; alert(d); // 1,(d=1) в постфиксной форме сначала происходит возвращение значения, а потом выполняется инкрементирования
+        c = (2+ ++a); alert(c); // 5,(c=2+(1+2)) потому что значение "a" сначала увеличили до 3 
+        d = (2+ b++); alert(d); // 4,(2+2) потому что значение "b" увеличили до 3, но оставили старое значение, т.к.постфиксная форма
+        alert(a); // 3, было увеличение на 1 два раза, в первой строке и в третей строке
+        alert(b); // 3, было увеличение на 1 два раза, во второй строке и в четвертой
+    //task2
+        var a = 2;
+        var x = 1 + (a *= 2);
+        // значение будет 5 (x=1+(2*2))
+        alert(x);
+    //task3
+        var a =parseInt(prompt('Введите первое число от -10 до 10',10));
+        if (isNaN(a)){
+        alert ('НЕ Число'); 
+        }
+        var b =parseInt(prompt('Введите второе число от -10 до 10',10));
+        if (isNaN(b)){
+        alert ('НЕ Число'); 
+        }
+        var x;
+        if (a >=0 && b>=0){
+        x=a-b;
+        alert('Вот такая разница получилась'+' '+x);
+        }
+        if (a < 0 && b < 0){
+            x=a*b;
+            alert('Вот такое произведение получилось'+' '+x);
+        }
+        if((a>0 && b<0)||(a<0 && b>0)){
+            x=a+b;
+            alert('Вот такая сумма получилась'+' '+x);
+        }
+    //task4
+    var a = parseInt(prompt('Введите число от 1 до 15'));
+    if (isNaN(a)){
+        alert ('НЕ Число'); 
+        }
+        switch (a) {
+    case 1:
+        alert(a++);
+    case 2:
+        alert(a++);
+    case 3:
+        alert(a++);
+    case 4:
+        alert(a++);
+    case 5:
+        alert(a++);
+    case 6:
+        alert(a++);
+    case 7:
+        alert(a++);
+    case 8:
+        alert(a++);
+    case 9:
+        alert(a++);
+    case 10:
+        alert(a++);
+    case 11:
+        alert(a++);
+    case 12:
+        alert(a++);
+    case 13:
+        alert(a++);
+    case 14:
+        alert(a++);
+    case 15:
+        alert(a);
+    case a >= 15:
+        alert('Это была последняя');
+        break;
+    default:
+        alert('Ошибочка вышла!')
+}
+//task5
+var a =parseInt(prompt('Введите первое число от -10 до 10',10));
+if (isNaN(a)){
+alert ('НЕ Число'); 
+}
+var b =parseInt(prompt('Введите второе число от -10 до 10',10));
+if (isNaN(b)){
+alert ('НЕ Число'); 
+}
+
+function add(a, b) {
+return a + b;
+}
+var result = add(a, b);
+alert('Сумма a и b равна: ' + result);
+
+function sub(a, b) {
+    return a - b;
+}
+result = sub(a, b);
+alert('Разность a и b равна: ' + result);
+
+function mult(a, b) {
+    return a * b;
+}
+result = mult(a, b);
+alert('Произведение a и b равно: ' + result);
+
+function div(a, b) {
+    return a / b;
+}
+result = div(a, b);
+alert('Деление a и b равно: ' + result);
+
+
+//task6
+var a =parseInt(prompt('Введите первое число от -10 до 10',10));
+if (isNaN(a)){
+alert ('НЕ Число'); 
+}
+var b =parseInt(prompt('Введите второе число от -10 до 10',10));
+if (isNaN(b)){
+alert ('НЕ Число'); 
+}
+var oper = prompt('Введите название операции: сложение, вычитание, умножение, деление');
+var result;
+
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case 'сложение':
+            return arg1 + arg2;
+            break;
+        case 'вычитание':
+            return arg1 - arg2;
+            break;
+        case 'умножение':
+            return arg1 * arg2;
+            break;
+        case 'деление':
+            return arg1 / arg2;
+            break;
+ 
+    }
+}
+ 
+result = mathOperation(a, b, oper);
+alert('Результат: ' + result);
+    </script>
+</body>
+
+</html>
