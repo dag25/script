@@ -1,2 +1,2 @@
 # script
-root java script
+"JavaScript, базовый уровень"
