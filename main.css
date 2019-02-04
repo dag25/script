@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 100px;
+}
+.field{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #cccccc;
+}
+.excel{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.snakeBody{
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.head{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.mouse{
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+
+}
+.obstacle{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(177, 226, 43);
+}
+.descr{
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  margin-top: 20px;
+} 
+.descr-item{
+  display: flex;
+  align-items: center;
+}
+.descr-item__sign{
+  width: 50px;
+  height: 50px;  
+}
+.first{
+  background-color: rgb(177, 226, 43); 
+}
+.second{
+  background-color: blueviolet;
+}
+.descr-item__text{
+  display:inline-block;
+  margin-left: 50px;
+  font-size: 20px;
+}

@@ -1,2 +1,0 @@
-# script
-root java script
