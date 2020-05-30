@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>lesson3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <section>
+            <div class="wrapper">
+<!----task1-->              
+                    <h3 class="condition">1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100 </h3>
+                    <div class="task1">
+                    <p class="solution"><b>Решение:</b><br>
+                        var i = 0;<br>
+                        var n = 100;<br>
+                        while(i <= n){<br>
+                            document.write(i++ + " ");<br>
+                        }</p>
+                        <p>Результат</p>
+                    <div class="display">
+                    <script >
+                        var i = 0;
+                        var n = 100;
+                        while(i <= n){
+                            document.write(i++ + " ");
+                        }
+                    </script>
+                    </div> 
+                </div>
+ <!----task2-->               
+                    <h3 class="condition">
+                        2. С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы результат выглядел так:
+                        0 – это ноль
+                        1 – нечетное число
+                        2 – четное число
+                        3 – нечетное число
+                        …
+                        10 – четное число
+                    </h3>
+                    <div class="task2">
+                    <p class="solution"><b>Решение:</b><br>
+                        var x = 0;<br>
+                        do{<br>
+                            if(x == 0)<br>
+                            {<br>
+                                document.write(x + " это ноль");<br>
+                            }<br>
+                            else if(index % 2 == 0)<br>
+                            {<br>
+                                document.write(x + " это четное число");<br>
+                            }<br>
+                            else<br>
+                            {<br>
+                                document.write(x + " это нечетное число");<br>
+                            }<br>
+                            x++;<br>
+                        }while(x <= 10);<br>
+                        </p>
+                        <p>Результат</p>
+                        <div class="display">
+                        <script>
+                            var a = 0;
+                            do{
+                                if(a == 0)
+                                {
+                                    document.write(a + " это ноль<br/>");
+                                }
+                                else if(a % 2 == 0)
+                                {
+                                    document.write(a + " это четное число<br/>");
+                                }
+                                else
+                                {
+                                    document.write(a + " это нечетное число<br/>");
+                                }
+                                a++;
+                            }while(a <= 10);
+                        </script>
+                        </div>
+                </div>
+<!-----task3-->
+<h3 class="condition">
+    3. Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. То есть
+	выглядеть должно вот так:<br/>
+	for(…){// здесь пусто}
+</h3>
+<div class="task3">
+<p class="solution"><b>Решение:</b><br>
+    for(var x = 0; x <= 9; document.write(x++ + " ")){}
+    </p>
+    <p>Результат</p>
+    <div class="display">
+    <script>        
+        for(var x = 0; x <= 9; document.write(x++ + " ")){}
+    </script>
+    </div>
+</div>
+<!-----task4-->
+<h3 class="condition">
+    4. * Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+</h3>
+<div class="task4">
+<p class="solution"><b>Решение:</b><br>
+    for(var i = 1, a = " "; i <= 20; i++){<br>
+        a += "x";<br>
+        document.write(a + " ");<br>
+    }
+    </p>
+    <p>Результат</p>
+    <div class="display">
+        <script>
+            
+			for(var i = 1, a=" "; i <= 20; i++){
+				a += "x";
+				document.write(a + "<br>");
+			}
+		</script>   
+    </div>
+</div>
+            </div>          
+        </section>
+        
+       
+    </body>
+</html>
